@@ -1,3 +1,7 @@
 hello, world!
 hola, mundo!
+<<<<<<< HEAD
 ciao, mondo!
+=======
+guten tag, welt!
+>>>>>>> german
