@@ -21,22 +21,17 @@ class Pumpkin extends Animal {
    stroke(pumpkinStrokeColor);
    rectMode(CENTER);
    fill(stemColor);
-   rect(getX(), getY() - 75, 50 * getSize(), 60 * getSize());
+   rect(getX(), getY() - 75 * getSize(), 50 * getSize(), 60 * getSize());
    fill(pumpkinColor);
-   ellipse(getX() - 60, getY(), 35 * getSize(), 100 * getSize());
-   ellipse(getX() + 60, getY(), 35 * getSize(), 100 * getSize());
-   ellipse(getX() - 35, getY(), 50 * getSize(), 125 * getSize());
-   ellipse(getX() + 35, getY(), 50 * getSize(), 125 * getSize());
+   ellipse(getX() - 60 * getSize(), getY(), 35 * getSize(), 100 * getSize());
+   ellipse(getX() + 60 * getSize(), getY(), 35 * getSize(), 100 * getSize());
+   ellipse(getX() - 35 * getSize(), getY(), 50 * getSize(), 125 * getSize());
+   ellipse(getX() + 35 * getSize(), getY(), 50 * getSize(), 125 * getSize());
    ellipse(getX(), getY(), 75 * getSize(), 150 * getSize());
    stroke(faceStrokeColor);
    fill(faceColor);
-   ellipse(getX() - 17, getY() - 20, 15 * getSize(), 15 * getSize());
-   ellipse(getX() + 17, getY() - 20, 15 * getSize(), 15 * getSize());
-   ellipse(getX(), getY() + 20, 20 * getSize(), 40 * getSize());
- }
- 
- void move(int x, int y) {
-   this.getX() = x;
-   this.getY() = y;
+   ellipse(getX() - 17 * getSize(), getY() - 20 * getSize(), 15 * getSize(), 15 * getSize());
+   ellipse(getX() + 17 * getSize(), getY() - 20 * getSize(), 15 * getSize(), 15 * getSize());
+   ellipse(getX(), getY() + 20 * getSize(), 20 * getSize(), 40 * getSize());
  }
 }

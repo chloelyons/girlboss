@@ -55,7 +55,7 @@ public abstract class Animal {
   /**
   * Move the Animal to the specified coordinate.
   */
-  public final void move(int x, int y) {
+  public void move(int x, int y) {
     this.xLoc = x;
     this.yLoc = y;
   }
