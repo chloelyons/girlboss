@@ -1,6 +1,7 @@
 /**
-* This class creates the pumpkin used in the main Object Zoo class.
+* This class is an instance of the Animal class, and it draws a pumpkin.
 * It creates the paramaters used for the pumpkin.
+* It allows the user to input their own colors and size for the pumpkin.
 * @author C. Lyons
 * @version 1.0.0
 */

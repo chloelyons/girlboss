@@ -1,8 +1,14 @@
+/**
+* This sketch creates a zoo of a creature, fish, and a pumpkin.
+* The code draws and moves one of these animals when the mouse is clicked.
+* The user determines which animal is created based on the most recent key they pressed.
+* @author C. Lyons
+* @version 1.0.0
+*/
 ArrayList<Animal> animalArray; 
 int animalToDraw;
 /**
-* Sets up the canvas and informs the Animal class what size the canvas is.
-* Declares the array list.
+* Sets up the canvas and declares setup variables.
 */
 void setup() {
   size(500,500);
@@ -11,8 +17,8 @@ void setup() {
 }
 
 /**
-* Creates a white background.
-* Checks which animal is in the array list to be drawn or moved.
+* Creates a background.
+* Draws and moves all the animals in the zoo.
 */
 void draw() {
  background(255);
@@ -23,11 +29,7 @@ void draw() {
 }
 
 /**
-* By default, animalToDraw (a variable declared earlier) equals 0.
-* Because of the for loop in the draw method, animalToDraw increases to create different animals.
-* If animalToDraw equals 0, code adds Pumpkin with the designated parameters to the array list.
-* If animalToDraw equals 1, code adds Creature with the designated parameters to the array list.
-* If animalToDraw equals 2, code adds Fish with the designated parameters to the array list.
+* When the mouse is clicked, a new animal is added to the zoo based on the most recent key pressed.
 */
 void mouseClicked() {
   if(animalToDraw == 0){
@@ -41,6 +43,9 @@ void mouseClicked() {
   }
 }
 
+/**
+* The most recent key pressed determines which animal is drawn and added to the zoo.
+*/
 void keyPressed() {
   if(key == 'p'){
     animalToDraw = 0;
